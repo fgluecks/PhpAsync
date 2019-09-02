@@ -1,6 +1,5 @@
 <?php
-require_once "../libs/Factory.php";
-require_once "../libs/Logger.php";
+require_once "../vendor/autoload.php";
 
 use \PhpAsync\Factory;
 

@@ -1,6 +1,5 @@
 <?php
-require_once __DIR__."/../libs/Child.php";
-require_once __DIR__."/../libs/Logger.php";
+require_once __DIR__ . "/../vendor/autoload.php";
 
 use \PhpAsync\Child;
 
