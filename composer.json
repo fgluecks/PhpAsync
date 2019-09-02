@@ -1,0 +1,28 @@
+{
+  "name": "fgluecks/phpasync",
+  "type": "project",
+  "description": "",
+  "license": "",
+  "authors": [
+    {
+      "name": "Frederik Glücks",
+      "homepage": "https://github.com/fgluecks"
+    }
+  ],
+  "version": "0.1",
+  "require": {
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "PhpAsync\\": "libs/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    }
+  }
+}
