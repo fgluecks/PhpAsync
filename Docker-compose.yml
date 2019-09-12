@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  webserver:
+    build: ./
+    image: phpasync_build
+    ports:
+      - "60010:80"
+    volumes:
+      - ./:/var/www/html
