@@ -6,6 +6,8 @@
 
 ## Usage
 
+The example script must with an absolute path.
+### Start script without parameter
 ```php
 $cmd = "<example script>";
 
@@ -13,4 +15,13 @@ $PhpAsync = new Factory();
 $pidOfChild = $PhpAsync->start($cmd);
 ```
 
-The example script must with an absolute path.
+### Start script with parameter
+```php
+$cmd = "<example script>";
+$parameter = [1, 'hello world'];
+
+$PhpAsync = new Factory();
+$pidOfChild = $PhpAsync->start($cmd, $parameter);
+```
+The parameters can be use inside the script by accessing $argv.
+$argv[0] is the script itself. The given parameters starts at position 1.

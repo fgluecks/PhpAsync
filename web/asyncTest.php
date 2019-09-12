@@ -1,4 +1,5 @@
 <?php
-sleep(20);
+sleep(5);
 echo "Async \n";
-echo "PID: ".getmypid()."\n\n";
+echo "Parameters " . join(" ", array_slice($argv, 1)) . "\n";
+echo "PID: " . getmypid() . "\n\n";

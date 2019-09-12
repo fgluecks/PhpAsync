@@ -23,14 +23,14 @@ class Child
 		$this->pid = $pid;
 	}
 
-	public function runCmd($cmd)
+	public function runCmd($cmd, $parameter)
 	{
 		Logger::write($this->pid . " | child is running");
 
 		$logfile = $this->logDir . date('Y-m-d') . "_" . $this->pid . ".log";
 
 		$output = [];
-		exec($this->phpCmd . " " . $cmd . " >> " . $logfile, $output);
+		exec($this->phpCmd . " " . $cmd . " " . join(" ", $parameter) . " >> " . $logfile, $output);
 
 		Logger::write($this->pid . " | child finished");
 	}
