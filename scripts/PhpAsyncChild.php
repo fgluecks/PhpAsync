@@ -1,5 +1,11 @@
 <?php
-require_once __DIR__ . "/../vendor/autoload.php";
+$vendorDir = __DIR__ . "/../vendor/autoload.php";
+
+if (!file_exists($vendorDir)) {
+	$vendorDir = __DIR__ ."/../../../autoload.php";
+}
+
+require_once $vendorDir;
 
 use \PhpAsync\Child;
 
