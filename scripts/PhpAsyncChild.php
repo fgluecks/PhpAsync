@@ -2,7 +2,7 @@
 $vendorDir = __DIR__ . "/../vendor/autoload.php";
 
 if (!file_exists($vendorDir)) {
-	$vendorDir = __DIR__ ."/../../../autoload.php";
+	$vendorDir = __DIR__ . "/../../../autoload.php";
 }
 
 require_once $vendorDir;
